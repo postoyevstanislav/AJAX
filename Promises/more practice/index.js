@@ -22,6 +22,7 @@ function deleteUser(userId) {
        return fetch(API + 'users/' + userId, {
            method: 'DELETE'
        })
+       .then(res => res.json())
     //    if (res.status ===200) {
     //        console.log('status: ', res.status)
     //    }
